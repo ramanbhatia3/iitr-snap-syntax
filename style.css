@@ -1,164 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
 
-    body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        background-color: #ffffff;
-        color: #000;
-        display: flex;
-        justify-content: center;
-        padding: 20px 0;
-    }
+.mobile-container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
 
-    .mobile-container {
-        width: 100%;
-        max-width: 400px; 
-        background: #fff;
-        position: relative;
-        overflow-x: hidden;
-    }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
+.nav-item {
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 
-    .nav-item {
-        font-size: 0.75rem;
-        font-weight: bold;
-        letter-spacing: 2px;
-    }
+.logo {
+    border: 1.5px solid #000;
+    width: 40px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    position: relative;
+}
 
-    .logo {
-        border: 1.5px solid #000;
-        width: 40px;
-        height: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        font-size: 0.6rem;
-        font-weight: bold;
-        position: relative;
-    }
+.logo::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 50%;
+    border-left: 1.5px solid #2a338b;
+}
 
-    .logo::after {
-        content: '';
-        position: absolute;
-        top: 10%;
-        bottom: 10%;
-        left: 50%;
-        border-left: 1.5px solid #2a338b;
-    }
+.main-section {
+    position: relative;
+    height: 500px;
+    margin: 0 20px;
+}
 
-    .main-section {
-        position: relative;
-        height: 500px;
-        margin: 0 20px;
-    }
-
-    .blue-frame {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 10%; 
-        border: 8px solid #2a338b;
-        background-color: transparent;
-        z-index: 1;
-    }
+.blue-frame {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 10%;
+    border: 8px solid #2a338b;
+    background-color: transparent;
+    z-index: 1;
+}
 
 
-    .graphic {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        z-index: 2;
-    }
+.graphic {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 2;
+}
 
-    .graphic-line {
-        width: 80px;
-        height: 3px;
-        background-color: #e5e7f1;
-        margin-bottom: 5px;
-    }
+.graphic-line {
+    width: 80px;
+    height: 3px;
+    background-color: #e5e7f1;
+    margin-bottom: 5px;
+}
 
-    .graphic-circle {
-        width: 30px;
-        height: 30px;
-        border: 3px solid #e5e7f1;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
+.graphic-circle {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #e5e7f1;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
-    .main-image {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 85%;
-        height: 65%;
-        object-fit: cover;
-        z-index: 2;
-        filter: grayscale(100%) sepia(100%) hue-rotate(190deg) saturate(400%) contrast(1.2);
-    }
+.main-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 85%;
+    height: 65%;
+    object-fit: cover;
+    z-index: 2;
+    filter: grayscale(100%) sepia(100%) hue-rotate(190deg) saturate(400%) contrast(1.2);
+}
 
-    .title-kamui {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        font-size: 2.5rem;
-        font-weight: 900;
-        letter-spacing: 8px;
-        color: #000;
-        z-index: 5;
-    }
+.title-kamui {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: #000;
+    z-index: 5;
+}
 
-    .large-number {
-        position: absolute;
-        bottom: -25px;
-        left: 15%;
-        font-size: 4.5rem;
-        font-weight: bold;
-        color: #e2e4ef;
-        z-index: 5;
-        letter-spacing: 10px;
-    }
+.large-number {
+    position: absolute;
+    bottom: -25px;
+    left: 15%;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #e2e4ef;
+    z-index: 5;
+    letter-spacing: 10px;
+}
 
-    .project-list {
-        margin-top: 50px;
-        padding-bottom: 30px;
-    }
+.project-list {
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
 
-    .project-list ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
+.project-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
 
-    .project-list li {
-        font-size: 0.75rem;
-        font-weight: 800;
-        letter-spacing: 2px;
-        color: #000;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
+.project-list li {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-    .project-list li span {
-        color: #7b85bb;
-    }
+.project-list li span {
+    color: #7b85bb;
+}
