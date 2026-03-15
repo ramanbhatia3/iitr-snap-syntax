@@ -161,3 +161,9 @@ body {
 .project-list li span {
     color: #7b85bb;
 }
+
+.title-kamui a{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: black;
+}
